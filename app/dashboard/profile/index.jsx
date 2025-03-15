@@ -108,22 +108,24 @@ export default function Page() {
           </View>
         </View>
 
-        <View className="bg-white mt-10 w-96 p-10 rounded-xl elevation-lg shadow-slate-950">
-          <View className="flex flex-col gap-6">
-            <View className="flex-row">
-              <Text className="text-black text-lg">Account Number</Text>
-              <View className="ml-14">
+        <View className="bg-white mt-20 w-96 p-[20px] rounded-xl elevation-lg shadow-slate-950">
+          <View className="flex">
+            <View className="flex-row mb-[20px]">
+              <Text className="text-black text-lg font-bold">
+                Account Number
+              </Text>
+              <View className="ml-auto">
                 <TouchableOpacity
                   // onPress={() => navigation.navigate("LoginSettings")}
                   className="flex-row items-center"
                 >
-                  <Text className="text-black ml-20">7068383089</Text>
+                  <Text className="text-blacks">7068383089</Text>
                 </TouchableOpacity>
               </View>
             </View>
             <View className="flex-row items-center">
-              <Text className="text-black text-lg">Account Tier</Text>
-              <View className="ml-32 flex-row items-center">
+              <Text className="text-black text-lg font-bold">Account Tier</Text>
+              <View className="ml-auto flex-row items-center">
                 <Text className="">Tier 1</Text>
                 <TouchableOpacity
                   // onPress={() => navigation.navigate("LoginSettings")}

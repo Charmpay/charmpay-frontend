@@ -41,16 +41,20 @@ export default function Page() {
               </TouchableOpacity>
             </View>
           </View>
-          <View className="mt-5 w-96 p-4">
-            <View className="flex flex-col gap-8">
-              <View className="flex-row">
+          <View className="mt-10 w-full p-[20px]">
+            <View className="flex">
+              <View className="flex-row mb-[30px]">
                 <View className="flex-row items-center">
-                  <Ionicons name="reorder-three-outline" size={24} />
-                  <Text className="text-black text-lg">
+                  <Ionicons
+                    name="reorder-three-outline"
+                    className="me-[10px]"
+                    size={24}
+                  />
+                  <Text className="text-black font-bold text-lg">
                     Transaction History
                   </Text>
                 </View>
-                <View className="ml-[150px]">
+                <View className="ml-auto">
                   <TouchableOpacity
                     // onPress={() => navigation.navigate("LoginSettings")}
                     className="flex-row items-center"
@@ -60,12 +64,18 @@ export default function Page() {
                   </TouchableOpacity>
                 </View>
               </View>
-              <View className="flex-row">
+              <View className="flex-row mb-[30px]">
                 <View className="flex-row items-center">
-                  <Ionicons name="speedometer-outline" size={20} />
-                  <Text className="text-black text-lg">Account Limits</Text>
+                  <Ionicons
+                    name="speedometer-outline"
+                    size={20}
+                    className="me-[10px]"
+                  />
+                  <Text className="text-black font-bold text-lg">
+                    Account Limits
+                  </Text>
                 </View>
-                <View className="ml-[180px]">
+                <View className="ml-auto">
                   <TouchableOpacity
                     // onPress={() => navigation.navigate("LoginSettings")}
                     className="flex-row items-center"
@@ -74,14 +84,88 @@ export default function Page() {
                   </TouchableOpacity>
                 </View>
               </View>
-              <View className="flex-row">
+              <View className="flex-row mb-[30px]">
                 <View className="flex-row items-center">
-                  <Ionicons name="headset" size={20} />
-                  <Text className="text-black text-lg">
+                  <Ionicons name="headset" size={20} className="me-[10px]" />
+                  <Text className="text-black font-bold text-lg">
                     Customer Care Service
                   </Text>
                 </View>
-                <View className="ml-[133px]">
+                <View className="ml-auto">
+                  <TouchableOpacity
+                    // onPress={() => navigation.navigate("LoginSettings")}
+                    className="flex-row items-center"
+                  >
+                    <Ionicons name="chevron-forward" size={20} color="black" />
+                  </TouchableOpacity>
+                </View>
+              </View>
+              <View className="flex-row mb-[30px]">
+                <View className="flex-row items-center">
+                  <Ionicons
+                    name="reorder-three-outline"
+                    size={20}
+                    className="me-[10px]"
+                  />
+                  <Text className="text-black font-bold text-lg">
+                    Invitation
+                  </Text>
+                </View>
+                <View className="ml-auto">
+                  <TouchableOpacity
+                    // onPress={() => navigation.navigate("LoginSettings")}
+                    className="flex-row items-center"
+                  >
+                    <Ionicons name="chevron-forward" size={20} color="black" />
+                  </TouchableOpacity>
+                </View>
+              </View>
+              <View className="flex-row mb-[30px]">
+                <View className="flex-row items-center">
+                  <Ionicons
+                    name="star-outline"
+                    size={20}
+                    className="me-[10px]"
+                  />
+                  <Text className="text-black font-bold text-lg">Rate Us</Text>
+                </View>
+                <View className="ml-auto">
+                  <TouchableOpacity
+                    // onPress={() => navigation.navigate("LoginSettings")}
+                    className="flex-row items-center"
+                  >
+                    <Ionicons name="chevron-forward" size={20} color="black" />
+                  </TouchableOpacity>
+                </View>
+              </View>
+              <View className="flex-row mb-[30px]">
+                <View className="flex-row items-center">
+                  <Ionicons name="pencil" size={20} className="me-[10px]" />
+                  <Text className="text-black font-bold text-lg">
+                    Edit Your Profile
+                  </Text>
+                </View>
+                <View className="ml-auto">
+                  <TouchableOpacity
+                    // onPress={() => navigation.navigate("LoginSettings")}
+                    className="flex-row items-center"
+                  >
+                    <Ionicons name="chevron-forward" size={20} color="black" />
+                  </TouchableOpacity>
+                </View>
+              </View>
+              <View className="flex-row mb-[30px]">
+                <View className="flex-row items-center">
+                  <Ionicons
+                    name="speedometer-outline"
+                    size={20}
+                    className="me-[10px]"
+                  />
+                  <Text className="text-black font-bold text-lg">
+                    Account Limits
+                  </Text>
+                </View>
+                <View className="ml-auto">
                   <TouchableOpacity
                     // onPress={() => navigation.navigate("LoginSettings")}
                     className="flex-row items-center"
@@ -92,68 +176,12 @@ export default function Page() {
               </View>
               <View className="flex-row">
                 <View className="flex-row items-center">
-                  <Ionicons name="reorder-three-outline" size={20} />
-                  <Text className="text-black text-lg">Invitation</Text>
-                </View>
-                <View className="ml-[215px]">
-                  <TouchableOpacity
-                    // onPress={() => navigation.navigate("LoginSettings")}
-                    className="flex-row items-center"
-                  >
-                    <Ionicons name="chevron-forward" size={20} color="black" />
-                  </TouchableOpacity>
-                </View>
-              </View>
-              <View className="flex-row">
-                <View className="flex-row items-center">
-                  <Ionicons name="star-outline" size={20} />
-                  <Text className="text-black text-lg">Rate Us</Text>
-                </View>
-                <View className="ml-[225px]">
-                  <TouchableOpacity
-                    // onPress={() => navigation.navigate("LoginSettings")}
-                    className="flex-row items-center"
-                  >
-                    <Ionicons name="chevron-forward" size={20} color="black" />
-                  </TouchableOpacity>
-                </View>
-              </View>
-              <View className="flex-row">
-                <View className="flex-row items-center">
-                  <Ionicons name="pencil" size={20} />
-                  <Text className="text-black text-lg">Edit Your Profile</Text>
-                </View>
-                <View className="ml-[175px]">
-                  <TouchableOpacity
-                    // onPress={() => navigation.navigate("LoginSettings")}
-                    className="flex-row items-center"
-                  >
-                    <Ionicons name="chevron-forward" size={20} color="black" />
-                  </TouchableOpacity>
-                </View>
-              </View>
-              <View className="flex-row">
-                <View className="flex-row items-center">
-                  <Ionicons name="speedometer-outline" size={20} />
-                  <Text className="text-black text-lg">Account Limits</Text>
-                </View>
-                <View className="ml-[180px]">
-                  <TouchableOpacity
-                    // onPress={() => navigation.navigate("LoginSettings")}
-                    className="flex-row items-center"
-                  >
-                    <Ionicons name="chevron-forward" size={20} color="black" />
-                  </TouchableOpacity>
-                </View>
-              </View>
-              <View className="flex-row">
-                <View className="flex-row items-center">
-                  <Ionicons name="headset" size={20} />
-                  <Text className="text-black text-lg">
+                  <Ionicons name="headset" size={20} className="me-[10px]" />
+                  <Text className="text-black font-bold text-lg">
                     Customer Care Services
                   </Text>
                 </View>
-                <View className="ml-[125px]">
+                <View className="ml-auto">
                   <TouchableOpacity
                     // onPress={() => navigation.navigate("LoginSettings")}
                     className="flex-row items-center"

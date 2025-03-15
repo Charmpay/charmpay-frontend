@@ -2,8 +2,9 @@ import { useState, useEffect } from "react";
 import { useRouter, Stack } from "expo-router";
 import "../global.css";
 import { ActivityIndicator, StatusBar } from "react-native";
-import { View, Image, Text } from "react-native";
+import { View, Image, Text, TouchableOpacity } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import { Ionicons } from "@expo/vector-icons";
 
 export default function Layout() {
   const [loading, setLoading] = useState(true);
@@ -96,8 +97,9 @@ export default function Layout() {
             headerLeft: () => (
               <View className="flex-row justify-center items-center">
                 <TouchableOpacity>
-                  <Ionicons name="chevron-back" />
+                  <Ionicons name="arrow-back" size={24} />
                 </TouchableOpacity>
+
                 <Text className="font-bold ms-[10px] text-BLACK">Settings</Text>
               </View>
             ),
@@ -128,7 +130,8 @@ export default function Layout() {
             headerTitle: "",
             headerShadowVisible: false,
             headerStyle: { backgroundColor: "white" },
-            headerLeft: () => (
+            headerTitleAlign: "center",
+            headerTitle: () => (
               <View className="flex-row justify-center items-center">
                 <TouchableOpacity className=" p-2 rounded-sm">
                   <Image
@@ -167,6 +170,14 @@ export default function Layout() {
                 </Text>
               </View>
             ),
+          }}
+        />
+        <Stack.Screen
+          name="/tasks/index"
+          options={{
+            headerTitle: "",
+            headerShadowVisible: false,
+            headerShown: false,
           }}
         />
       </Stack>

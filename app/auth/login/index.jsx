@@ -16,7 +16,7 @@ import {
 } from "react-native-confirmation-code-field";
 import { router } from "expo-router";
 const CELL_COUNT = 6; // Number of digits in the passcode
-import useApi from "@/app/hooks/useApi";
+import useApi from "@/hooks/useApi";
 
 const Page = () => {
   const { login } = useApi;
@@ -65,7 +65,6 @@ const Page = () => {
       <TouchableOpacity
         className="bg-blue-900 w-96 p-3 rounded-lg absolute bottom-5 flex-row justify-center items-center"
         onPress={() => login(phoneNumber, value, setLoading)}
-      
       >
         {loading && <ActivityIndicator size={24} color={"white"} />}
         <Text className="text-white text-center font-semibold">NEXT</Text>

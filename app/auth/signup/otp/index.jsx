@@ -7,7 +7,7 @@ import {
   useClearByFocusCell,
 } from "react-native-confirmation-code-field";
 import { router } from "expo-router";
-import useApi from "@/app/hooks/useApi";
+import useApi from "@/hooks/useApi";
 
 const CELL_COUNT = 6; // Number of digits in the passcode
 

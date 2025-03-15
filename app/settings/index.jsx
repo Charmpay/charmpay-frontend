@@ -5,14 +5,14 @@ import { Ionicons } from "@expo/vector-icons"; // Importing an icon library
 
 export default function Page() {
   return (
-    <View className="bg-[#F2F2F2] flex-1 pt-10 ">
+    <View className="bg-[#F2F2F2] flex-1 items-center pt-10 ">
       {/* Settings Options */}
-      <View className="bg-white rounded-xl elevation-lg shadow-slate-950">
+      <View className="">
         <TouchableOpacity
-          className="bg-white p-[15px] my-2 flex-row rounded-[10px] justify-between elevation-lg w-96 ml-3 shadow-black"
+          className="bg-white p-[15px] my-2 flex-row rounded-[10px] justify-between elevation-lg w-96 ml-auto shadow-black"
           // onPress={() => navigation.navigate("LoginSettings")}
         >
-          <Text className="text-lg">Login Settings</Text>
+          <Text className="text-lg font-bold">Login Settings</Text>
           <Ionicons name="chevron-forward" size={20} color="black" />
         </TouchableOpacity>
 
@@ -20,7 +20,7 @@ export default function Page() {
           className="bg-white p-[15px] my-2 flex-row rounded-[10px] justify-between elevation-lg w-96 ml-3 shadow-black"
           // onPress={() => navigation.navigate("PaymentSettings")}
         >
-          <Text className="text-lg">Payment Settings</Text>
+          <Text className="text-lg font-bold">Payment Settings</Text>
           <Ionicons name="chevron-forward" size={20} color="black" />
         </TouchableOpacity>
 
@@ -28,7 +28,9 @@ export default function Page() {
           className="bg-white p-[15px] my-2 flex-row rounded-[10px] justify-between elevation-lg w-96 ml-3 shadow-black"
           // onPress={() => navigation.navigate("TaskDispute")}
         >
-          <Text className="text-lg">Task and Dispute Preferences</Text>
+          <Text className="text-lg font-bold">
+            Task and Dispute Preferences
+          </Text>
           <Ionicons name="chevron-forward" size={20} color="black" />
         </TouchableOpacity>
       </View>
